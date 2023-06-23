@@ -3,6 +3,7 @@ package Utilities;
 import pageFactory.About;
 import pageFactory.Catalog;
 import pageFactory.Checkout;
+import pageFactory.HomePage;
 import pageFactory.LinksOnTheBottomClickablity;
 import pageFactory.MyAccountAndLogin;
 import pageFactory.OnlineStoreLocations;
@@ -21,6 +22,7 @@ public class PageInitializer extends Driver{
 	public static Products products;
 	public static SearchBar search;
 	public static WinterWarmer winter;
+	public static HomePage homepage;
 	
 	public static void initialize() {
 		about = new About();
@@ -32,6 +34,7 @@ public class PageInitializer extends Driver{
 		products = new Products();
 		search= new SearchBar();
 		winter = new WinterWarmer();
+		homepage = new HomePage();
 	}
 	
 }

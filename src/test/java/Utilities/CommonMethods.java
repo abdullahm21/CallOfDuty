@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebElement;
@@ -15,6 +18,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class CommonMethods extends PageInitializer{
+
+	static JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 
 	public static void sendKeys(WebElement element, String text) {
 
@@ -215,7 +220,7 @@ public class CommonMethods extends PageInitializer{
 	}
 
 	//-------------------------Click & SendKeys-----------------------
-	public static void click(WebElement element, String keys) {
+	public static void click(WebElement element) {
 		waitForVisibility(element).click();
 	}
 
@@ -236,7 +241,61 @@ public class CommonMethods extends PageInitializer{
 	//-------------------------------Drag & Drop----------------------//
 	public static void dragAndDrop(WebElement element1,WebElement element2) {
 		Actions action = new Actions(Driver.getDriver());
-		action.dragAndDrop(element1, element2).build().perform();;
+		action.dragAndDrop(element1, element2).build().perform();
+	}
+	
+	//------------------------ATTENTION: This is just for the Products Section----------------------------//
+	//This method is only used for the Products Testcase number 4!!!!!
+	public static void productsDragAndDropByOffsetUntilConditionMet(WebElement element, WebElement element2) {
+		Actions action = new Actions(Driver.getDriver());
+		String lowSliderValueText = "";
+		
+		//System.out.println(lowSliderValueText);
+		
+		//products.minPrice.clear();
+		//--------------
+		CommonMethods.sendKeys("6", products.minPrice);
+		
+		action.sendKeys(Keys.ENTER);
+		
+		while(!(lowSliderValueText.equals("60.00"))) {
+			//lowSliderValueText=Driver.getDriver().findElement(By.xpath("//div[@class='noUi-handle noUi-handle-lower']")).getAttribute("aria-valuetext");
+			double i = 1;
+			action.dragAndDropBy(element, (int) i, 0).perform();
+			lowSliderValueText=products.increaseSliderAttribute.getAttribute("aria-valuetext");
+
+			System.out.println(lowSliderValueText);			
+		}
+		
+//		String highSliderValueText = "";
+//		
+//		Driver.getDriver().findElement(By.xpath("//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[1]/div[2]/div/div/div[1]/input[2]")).sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+//		//products.maxPrice.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+//		Driver.getDriver().findElement(By.xpath("//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[1]/div[2]/div/div/div[1]/input[2]")).sendKeys("512");
+//
+//		//action.sendKeys(Keys.ENTER);
+//		
+//		while(!(highSliderValueText.equals("503.00"))) {
+//			//lowSliderValueText=Driver.getDriver().findElement(By.xpath("//div[@class='noUi-handle noUi-handle-lower']")).getAttribute("aria-valuetext");
+//			
+//			action.dragAndDropBy(element2, -1, 0).perform();
+//			highSliderValueText=Driver.getDriver().findElement(By.xpath("//div[@class='noUi-handle noUi-handle-upper']")).getAttribute("aria-valuetext");
+//
+//			System.out.println(highSliderValueText);			
+//		}
+		
+		CommonMethods.removeKeysUsingBackSpace(products.maxPrice);
+		CommonMethods.sendKeys("512", products.maxPrice);
+		action.sendKeys(Keys.ENTER);
+		while(!(lowSliderValueText.equals("500.00"))) {
+			//lowSliderValueText=Driver.getDriver().findElement(By.xpath("//div[@class='noUi-handle noUi-handle-lower']")).getAttribute("aria-valuetext");
+			double i = -1;
+			action.dragAndDropBy(element2, (int) i, 0).perform();
+			lowSliderValueText=products.decreaseSliderAttribute.getAttribute("aria-valuetext");
+
+			System.out.println(lowSliderValueText);		
+			
+		}
 	}
 
 	//-------------------------------Double click an element----------------------//
@@ -244,4 +303,75 @@ public class CommonMethods extends PageInitializer{
 		Actions action = new Actions(Driver.getDriver());
 		action.doubleClick(element).perform();;
 	}
+	
+public static void actionClickInListByText(List<WebElement> list, String text) {
+        
+        //Actions actions = new Actions(Driver.getDriver());
+        
+        for (int i =1; i< list.size();i++) {
+        	
+        	String brandText = Driver.getDriver().findElement(By.xpath("//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[3]/div[2]/div/div[1]/div[2]/div/div/div/ul/li["+i+"]/button/span[2]")).getText();
+                
+                if (brandText.equalsIgnoreCase(text)) {
+                    //actions.moveToElement(list.get(i)).perform();;
+                    list.get(i).click();
+                    break;
+                }
+                //js.executeScript("window.scrollBy(0,650)", "");
+
+        }
+    
+    }
+
+//public static void clickSpecificElementInListByText(List<WebElement> listOfWebElement,
+//        String textOfSpecificElement) {
+//
+//
+//    for (int i = 1; i < 30; i++) {
+//    	
+//    	//System.out.print(listOfWebElement.toString()+" ");
+//    	
+//    	CommonMethods.wait(5);
+//
+//    	String brandText = Driver.getDriver().findElement(By.xpath("//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div/div[2]/div/div[1]/div[2]/div/div/div/ul/li["+i+"]/button/span[2]")).getText();
+//    	System.out.println(brandText+" ");
+//        if (brandText.equals(textOfSpecificElement)) {
+//            listOfWebElement.get(i).click();
+//        }
+//    }
+// }
+
+public static void clickSpecificElementInListByText(List<WebElement> listOfWebElement,
+        String textOfSpecificElement) {
+
+    String text;
+
+    for (int i = 0; i < listOfWebElement.size(); i++) {
+
+        text = listOfWebElement.get(i).getText();
+        if (text.contains(textOfSpecificElement)) {
+            listOfWebElement.get(i).click();
+        }
+    }
+
 }
+
+
+
+public static void removeKeysUsingBackSpace(WebElement element) {
+	
+	for(int i =0; i < 3; i++) {
+    waitForVisibility(element).sendKeys(Keys.BACK_SPACE);
+	}
+
+}
+
+public static void sendKeysUsingEnter(String keys,WebElement element) {
+    waitForVisibility(element).sendKeys(keys, Keys.ENTER);
+
+}
+//Above is the wait when clicking and when sending keys.
+
+
+}
+

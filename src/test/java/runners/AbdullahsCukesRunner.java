@@ -9,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber-report.html", "json:target/cucumber.json"},
 		features = "src/test/resources/features/Abdullah.feature",
-		glue = "stepDefinition",	//where you define the step definitions file: Whcih has the gherkins methods.
-		dryRun = false	//true: runs it in the background, false: runs it regularly.
-		,tags = "@queryTest"	
+		glue = "stepDefinitions",	//where you define the step definitions file: Whcih has the gherkins methods.
+		dryRun = true	//true: runs it in the background, false: runs it regularly.
+		//,tags = "@regression"	
 )
 public class AbdullahsCukesRunner {
 
