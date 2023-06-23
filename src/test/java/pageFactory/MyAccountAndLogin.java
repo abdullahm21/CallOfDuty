@@ -45,13 +45,13 @@ public class MyAccountAndLogin {
 //		        driver.quit();
 		    }
 	
-		@FindBy(xpath = "//*[@id=\"header\"]/div[1]/div/div/div[2]/ul/li[1]/a\r\n")
+		@FindBy(xpath = "//*[@id=\"header\"]/div[1]/div/div/div[2]/ul/li[1]/a")
 		public WebElement Login;
 		
-		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[1]/input\r\n")
+		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[1]/input")
 		public WebElement First_Name;
 		
-		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[2]/input\r\n")
+		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[2]/input")
 		public WebElement Last_Name;
 		
 		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[3]/input")
@@ -60,7 +60,7 @@ public class MyAccountAndLogin {
 		@FindBy(xpath = "//*[@id=\"create_customer\"]/div[5]/input")
 		public WebElement PostCode;
 		
-		@FindBy(xpath = "/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[2]/div/form/div[8]/input\r\n")
+		@FindBy(xpath = "/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[2]/div/form/div[8]/input")
 		public WebElement Password;
 		
 		@FindBy(xpath = "//*[@id=\"flexCheckChecked\"]")
@@ -73,17 +73,17 @@ public class MyAccountAndLogin {
 		
 		
 		
-		@FindBy(xpath = "//*[@id=\"email\"]\r\n")
+		@FindBy(xpath = "//*[@id=\"email\"]")
 		public WebElement Login_Email;
 		
-		@FindBy(xpath = "/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[1]/div/div[1]/form/div[2]/input\r\n")
+		@FindBy(xpath = "/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[1]/div/div[1]/form/div[2]/input")
 		public WebElement Login_Password;
 		
 		
-		@FindBy(xpath = "//*[@id=\"customer_login\"]/div[3]/div/button\r\n")
+		@FindBy(xpath = "//*[@id=\"customer_login\"]/div[3]/div/button")
 		public WebElement signup_button;
 		
-		@FindBy(xpath = "/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[1]/div/div[1]/form/div[1]/ul/li\r\n")
+		@FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/ul/li")
 		public WebElement Error;
 		
 		
