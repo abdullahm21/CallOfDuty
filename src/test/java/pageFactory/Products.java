@@ -68,6 +68,7 @@ public class Products {
 		public WebElement clothingItem;
 	*/
 	
+
 	@FindBy(id="AddToCart-product-template")
 	public WebElement addToCart;
 	
@@ -132,6 +133,24 @@ public class Products {
 	
 	//Assertion from Refine by section afterwards.
 	
+	//Muatter's Product Locator
+	// Product Page
+	
+	@FindBy(xpath="//img[@alt=\"Germanica 4.5L Digital Air Fryer\"][1]")
+	public WebElement airFryerImage;
+	
+	@FindBy(id="AddToCart-product-template")
+	public WebElement addHomeDelivery;
+	
+	//assertion true displayedtext
+	@FindBy(xpath="//div[6]/div[2]/div/div[1]/div/div[1]/p")
+	public WebElement addToCartSuccessMsg;
+	
+	// "Added to cart successfully. What's next?"
+	
+	@FindBy(xpath="//div[6]/div[2]/div/div[1]/div/a")
+	public WebElement quitButton;
+//---------------------------------------------------------
 	
 	
 }

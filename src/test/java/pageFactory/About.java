@@ -14,19 +14,37 @@ public class About {
 	}
 	
 	/*Declare the "FindBy elements here" for your page: For example:
-	
-	@FindBy(LocatorForElementLikeXpath="element")
-	public WebElement nameYourFindByAnnotationElementHere;
-	
-	Like this one below:
-	
-	@FindBy(xpath="//h6[text()='Dashboard']")
-	public WebElement dashboardText;
-	
+
 	*/
-	
-	@FindBy(xpath="//ul[@class='main-navigation nav hidden-tablet hidden-sm hidden-xs']/li[6]/a/span[1]")
+	//HomePage About
+	@FindBy(xpath="//span[contains(text(), 'About')]")
 	public WebElement aboutButton;
 	
+	@FindBy(xpath="//a[contains(text(), ' About us ')]")
+	public WebElement aboutUsButton;
+	
+	@FindBy(xpath="//h2[@class=\"bdf-h-t bdf-sz-xl\"]")
+	public WebElement textVisableOnAboutPage;
+	
+	
+	
+	@FindBy(xpath="//li[@class='ss_megamenu_lv2 menu_item_dropS']")
+	public WebElement buyNowPayLaterButton;
+	
+	@FindBy(xpath="//li[@class='ss_megamenu_lv2  '][4]")
+	public WebElement  legalTAndCButton;
+	
+	@FindBy(xpath="//li[@class='ss_megamenu_lv2  '][6]")
+	public WebElement shippingAndDeliveryButton;
+	
+	@FindBy(id="boost-pfs-search-box-0")
+	public WebElement searchField;
+	
+	@FindBy(xpath="//div[3]/div/div[2]/form/button")
+	public WebElement searchButton;
+	
+
+
+
 	
 }
