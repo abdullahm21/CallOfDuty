@@ -9,12 +9,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 
 public class CommonMethods extends PageInitializer{
@@ -373,5 +375,62 @@ public static void sendKeysUsingEnter(String keys,WebElement element) {
 //Above is the wait when clicking and when sending keys.
 
 
-}
+	// Muatter's Test 
+	
+
+		public static void iterateDropdownOptions(WebElement dropdownElement) {
+			
+			Select dropdown = new Select(dropdownElement);
+			WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+		//	WebDriverWait wait2 = new WebDriverWait(Driver.getDriver(), 10);
+			SDPage.changeButton.click();
+			SDPage.suburbField.clear();
+			SDPage.calculatorButton.click();
+			wait(3);
+			
+			for (WebElement option : dropdown.getOptions()) {
+				wait.until(ExpectedConditions.elementToBeClickable(SDPage.changeButton));
+				SDPage.changeButton.click();
+				String selectedState = option.getAttribute("value");
+				dropdown.selectByValue(selectedState);
+				String postcode = getPostcodeForState(selectedState);
+				SDPage.postcodeInputField.clear();
+				//SDPage.postcodeInputField.sendKeys(postcode, Keys.ENTER);
+				SDPage.postcodeInputField.sendKeys(postcode);
+
+				wait.until(ExpectedConditions.elementToBeClickable(SDPage.calculatorButton));
+				SDPage.calculatorButton.click();
+				Assert.assertTrue(SDPage.cartSubTotalPrice.isDisplayed());
+				
+				WebDriverWait wait1 = new WebDriverWait(Driver.getDriver(), 10);
+			
+				try {
+				    wait1.until(ExpectedConditions.elementToBeClickable(SDPage.changeButton));
+				} catch (StaleElementReferenceException e) {
+				    // Element reference is stale, re-locate the element and retry the click
+				    SDPage.newChangeButton.click();
+				}
+			}
+
+		}
+
+		public static String getPostcodeForState(String state) {
+			switch (state) {
+			case "ACT":
+				return "2600";
+
+			case "NSW":
+				return "2000";
+			case "QLD":
+				return "4000";
+			case "SA":
+				return "5000";
+			case "VIC":
+				return "3000";
+			default:
+				return "5000";
+
+			}
+		}
+	}
 
