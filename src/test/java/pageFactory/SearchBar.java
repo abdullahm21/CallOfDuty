@@ -11,6 +11,7 @@ public class SearchBar {
 	public SearchBar() {
 		PageFactory.initElements(Driver.getDriver(), this);
 
+		//Milad
 	}
 
 	/*

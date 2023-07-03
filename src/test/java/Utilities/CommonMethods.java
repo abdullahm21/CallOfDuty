@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebElement;
@@ -244,4 +245,38 @@ public class CommonMethods extends PageInitializer{
 		Actions action = new Actions(Driver.getDriver());
 		action.doubleClick(element).perform();;
 	}
+	
+	public static void searchDragAndDropByOffset(WebElement element) {
+        Actions action = new Actions(Driver.getDriver());
+        String highSliderValueText = "";
+        
+        
+        
+        action.sendKeys(Keys.ENTER);
+        
+        while(!(highSliderValueText.equals("150.23"))) {
+            
+            int j = -1;
+            action.dragAndDropBy(element, j, 0).perform();
+            highSliderValueText=search.increaseSliderAttribute.getAttribute("aria-valuetext");
+
+            System.out.println(highSliderValueText);            
+        }
+    }
+	
+	public static void clickSpecificElementInListByText(List<WebElement> listOfWebElement,
+            String textOfSpecificElement) {
+
+        String text;
+
+        for (int i = 0; i < listOfWebElement.size(); i++) {
+
+            text = listOfWebElement.get(i).getText();
+            if (text.contains(textOfSpecificElement)) {
+                listOfWebElement.get(i).click();
+            }
+        }
+    }
+	
+	
 }
