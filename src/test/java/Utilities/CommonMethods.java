@@ -432,5 +432,24 @@ public static void sendKeysUsingEnter(String keys,WebElement element) {
 
 			}
 		}
+		
+		public static void searchDragAndDropByOffset(WebElement element) {
+            Actions action = new Actions(Driver.getDriver());
+            String highSliderValueText = "";
+            
+            
+            
+            action.sendKeys(Keys.ENTER);
+            
+            while(!(highSliderValueText.equals("150.23"))) {
+                
+                int j = -1;
+                action.dragAndDropBy(element, j, 0).perform();
+                highSliderValueText=search.increaseSliderAttribute.getAttribute("aria-valuetext");
+
+                System.out.println(highSliderValueText);            
+            }
+        }
+		
 	}
 
