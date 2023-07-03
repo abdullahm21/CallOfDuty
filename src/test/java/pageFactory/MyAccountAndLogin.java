@@ -6,7 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import Utilities.CommonMethods;
 import Utilities.Driver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class MyAccountAndLogin {
 
@@ -71,7 +75,22 @@ public class MyAccountAndLogin {
 		
 		//--------------------------------------------------------------------------//
 		
+		@FindBy(xpath = "//*[@id=\"create_customer\"]/p/input")
+		public WebElement login_button;
 		
+		@Given("I click on forgot the password? and enter an valid email")
+	    public void iClickOnForgotThePasswordAndEnterAnValidEmail() {
+	        CommonMethods.click(login.Forgot_Password);
+	        CommonMethods.wait(1);
+	        CommonMethods.sendKeys("jomnakorn4@gmail.com", login.Recover_Email);
+
+	    }
+
+	    @When("I click on submit button")
+	    public void iClickOnSubmitButton() {
+	        CommonMethods.click(login.submit_button);
+	    }
+
 		
 		@FindBy(xpath = "//*[@id=\"email\"]")
 		public WebElement Login_Email;
