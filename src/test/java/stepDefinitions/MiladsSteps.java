@@ -94,6 +94,6 @@ CommonMethods.clickSpecificElementInListByText(brand, "Others");
 		Assert.assertEquals(actualText, expectedText);
 	}
 
-	//Milad
+	//Milad 2222
 	
 }

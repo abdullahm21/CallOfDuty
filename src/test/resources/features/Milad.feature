@@ -6,7 +6,7 @@ Background:
 	  When the user write the desired item on search box
 		
 
-#
+####
   		Scenario: search for an item
       And click on the desired item
       Then the user should be able to see the item
