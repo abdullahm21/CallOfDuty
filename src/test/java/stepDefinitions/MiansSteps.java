@@ -24,7 +24,7 @@ public class MiansSteps extends CommonMethods{
 //	    CommonMethods.sendKeys("teamcod@gmail.com", login.Email);
 //	    CommonMethods.sendKeys("22192", login.PostCode);
 //	    CommonMethods.sendKeys("OmgRizzu21", login.Password);
-//	    
+//
 //	}
 //
 //	@When("selects the checkbox in the end of info entered")
@@ -41,7 +41,7 @@ public class MiansSteps extends CommonMethods{
 //	public void the_user_should_be_logged_in_and_redirected_to_the_home_page() {
 //		String actualURL = Driver.getDriver().getCurrentUrl();
 //	    String expectedURL = "https://www.cheapaschips.com.au/";
-//	    
+//
 //	    Assert.assertEquals(actualURL, expectedURL);
 //	}
 //
@@ -66,12 +66,12 @@ public class MiansSteps extends CommonMethods{
 //	public void the_user_should_see_an_error_message_saying_invalid_email_or_password() {
 //	    Assert.assertTrue(login.Error.isDisplayed());
 //	}
-	
+
 	@Given("the user is on the Home page of the website")
 	public void the_user_is_on_the_home_page_of_the_website() {
 		String actualURL = Driver.getDriver().getCurrentUrl();
 	    String expectedURL = "https://www.cheapaschips.com.au/";
-	    
+
 	    Assert.assertEquals(actualURL, expectedURL);
 	}
 
@@ -90,7 +90,7 @@ public class MiansSteps extends CommonMethods{
 		    CommonMethods.sendKeys("22192", login.PostCode);
 	}
 
-	
+
 	@When("selects the checkbox in the end of info entered and press enter to login")
 	public void selects_the_checkbox_in_the_end_of_info_entered_and_press_enter_to_login() {
 		login.Checkbox.click();
@@ -107,36 +107,36 @@ public class MiansSteps extends CommonMethods{
 	public void the_user_should_be_logged_in_and_redirected_to_the_home_page() {
 		String actualURL = Driver.getDriver().getCurrentUrl();
 	    String expectedURL = "https://www.cheapaschips.com.au/";
-	    
+
 	    Assert.assertEquals(actualURL, expectedURL);
 	}
 
 	//TestCase 2:
-	
+
 	@When("the user enters the valid email")
 	public void the_user_enters_the_valid_email() {
 	    CommonMethods.sendKeys("teamcallofd@gmail.com", login.Login_Email);
 
 	}
 
-	
+
 	@When("the user enters a valid password and press enter to login")
 	public void the_user_enters_a_valid_password_and_press_enter_to_login() {
 		CommonMethods.sendKeysUsingEnter("OmgRizzu21", login.Login_Password);
-		
+
 
 	}
-	
+
 	@Then("the user should be logged in and redirected to the Account Info Page")
 	public void the_user_should_be_logged_in_and_redirected_to_the_account_info_page() {
 	    CommonMethods.wait(15);
 
 	    String actualURL = Driver.getDriver().getCurrentUrl();
 	    String expectedURL = "https://www.cheapaschips.com.au/challenge/";
-	    
+
 	    Assert.assertEquals(actualURL, expectedURL);
 	}
-	
+
 	//
 	@When("the user enters an invalid email")
 	public void the_user_enters_an_invalid_email() {
@@ -149,7 +149,7 @@ public class MiansSteps extends CommonMethods{
 		CommonMethods.wait(15);
 		String actualURL = Driver.getDriver().getCurrentUrl();
 	    String expectedURL = "https://www.cheapaschips.com.au/challenge/";
-	    
+
 	    Assert.assertEquals(actualURL, expectedURL);
 	}
 }

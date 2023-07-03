@@ -77,19 +77,6 @@ public class MyAccountAndLogin {
 		
 		@FindBy(xpath = "//*[@id=\"create_customer\"]/p/input")
 		public WebElement login_button;
-		
-		@Given("I click on forgot the password? and enter an valid email")
-	    public void iClickOnForgotThePasswordAndEnterAnValidEmail() {
-	        CommonMethods.click(login.Forgot_Password);
-	        CommonMethods.wait(1);
-	        CommonMethods.sendKeys("jomnakorn4@gmail.com", login.Recover_Email);
-
-	    }
-
-	    @When("I click on submit button")
-	    public void iClickOnSubmitButton() {
-	        CommonMethods.click(login.submit_button);
-	    }
 
 		
 		@FindBy(xpath = "//*[@id=\"email\"]")
@@ -104,7 +91,112 @@ public class MyAccountAndLogin {
 		
 		@FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/ul/li")
 		public WebElement Error;
-		
+
+		@FindBy(xpath = "//*[@id=\"customer_login\"]/p/a")
+		public  WebElement Forgot_Password;
+
+		@FindBy(xpath = "//*[@id=\"RecoverEmail\"]")
+		public WebElement Recover_Email;
+
+		@FindBy(xpath = "//*[@id=\"recover-password\"]/div[2]/form/div[2]/p/input")
+		public WebElement submit_button;
+
+	// Locators
+
+//	private WebDriver driver;
+//	private By emailInputLocator = By.xpath("//*[@id=\"email\"]");
+//	private By passwordInputLocator = By.xpath("/html/body/div[3]/div[5]/div[1]/div/div/div[2]/div[1]/div/div[1]/form/div[2]/input");
+//	private By loginButtonLocator = By.xpath("//*[@id=\"customer_login\"]/div[3]/div/button");
+//	private By forgottenPasswordLinkLocator = By.xpath("//*[@id=\"customer_login\"]/p/a");
+//	private By logoutLinkLocator = By.xpath("//*[@id=\"MainContent\"]/div[2]/div/div[1]/div[2]/span[6]");
+//
+//
+//	// Constructor
+//	public MyAccountAndLogin(WebDriver driver) {
+//		this.driver = driver;
+//	}
+//
+//	// Methods
+//	public void enterEmail(String email) {
+//		WebElement emailInput = driver.findElement(emailInputLocator);
+//		emailInput.sendKeys(email);
+//	}
+//
+//	public void enterPassword(String password) {
+//		WebElement passwordInput = driver.findElement(passwordInputLocator);
+//		passwordInput.sendKeys(password);
+//	}
+//
+//	public void clickLoginButton() {
+//		WebElement loginButton = driver.findElement(loginButtonLocator);
+//		loginButton.click();
+//	}
+//
+//	public void clickForgottenPasswordLink() {
+//		WebElement forgottenPasswordLink = driver.findElement(forgottenPasswordLinkLocator);
+//		forgottenPasswordLink.click();
+//	}
+//
+//	public boolean checkForgotPwdLink(){
+//		return driver.findElement(forgottenPasswordLinkLocator).isDisplayed();
+//	}
+//
+//	public boolean checkLogoutLink(){
+//		CommonMethods.wait(5);
+//		return driver.findElement(logoutLinkLocator).isDisplayed();
+//	}
+//
+//	public void login(String email, String password) {
+//		enterEmail(email);
+//		enterPassword(password);
+//		clickLoginButton();
+//	}
+//
+//	public String getForgotPwdPageUrl(){
+//		String forgotPwdPageUrl = driver.getCurrentUrl();
+//		return forgotPwdPageUrl;
+//	}
+//	public static void main(String[] args) {
+//		// Set the path to the ChromeDriver executable
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\peak_\\Documents\\GitHub\\CallOfDuty\\src\\test\\java\\chromedriver.exe");
+//
+//		// Create a new instance of the ChromeDriver
+//		WebDriver driver = new ChromeDriver();
+//
+//		// Initialize MyAccountAndLogin using the WebDriver
+//		MyAccountAndLogin myAccount = new MyAccountAndLogin(driver);
+//
+//		// Navigate to the login page
+//		driver.get("https://www.cheapaschips.com.au/account/login");
+//
+//		// Test Case: Successful Login
+//		myAccount.login("jomnakorn4@gmail.com", "Vdvgvega1!");
+//
+//		// Verify successful login
+//		boolean isLogoutLinkDisplayed = myAccount.checkLogoutLink();
+//		if (isLogoutLinkDisplayed) {
+//			System.out.println("Login was successful. Logout link is displayed.");
+//		} else {
+//			System.out.println("Login was not successful.");
+//		}
+//
+//		// Test Case: Forgot Password
+//		myAccount.clickForgottenPasswordLink();
+//
+//		// Verify the forgot password link is displayed
+//		boolean isForgotPasswordLinkDisplayed = myAccount.checkForgotPwdLink();
+//		if (isForgotPasswordLinkDisplayed) {
+//			String forgotPwdPageUrl = myAccount.getForgotPwdPageUrl();
+//			System.out.println("Forgot password link is displayed. Forgot Password Page URL: " + forgotPwdPageUrl);
+//		} else {
+//			System.out.println("Forgot password link is not displayed.");
+//		}
+//
+//		// Quit the WebDriver instance
+//		driver.quit();
+//	}
+//
+//}
 		
 		
 		

@@ -4,12 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c7588ac-a539-4b2b-8fe0-0f803c0b9497" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3c7588ac-a539-4b2b-8fe0-0f803c0b9497" name="Changes" comment="add">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageFactory/MyAccountAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageFactory/MyAccountAndLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/PeggiesCukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/PeggiesCukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/MiansSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/MiansSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/PeggiesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/PeggiesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Mian.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Mian.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/CheapAsChipsProject/CheapAsChipsProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/ConfigurationReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/ConfigurationReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Mian.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Mian.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Peggie.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Peggie.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/Checkout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/Checkout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/LinksOnTheBottomClickablity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/LinksOnTheBottomClickablity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/MyAccountAndLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/MyAccountAndLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/OnlineStoreLocations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/OnlineStoreLocations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/SearchBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/SearchBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/AbdullahsCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/AbdullahsCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/AradsCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/AradsCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/BeatricesCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/BeatricesCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/CamiransCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/CamiransCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/MiansCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/MiansCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/MiladsCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/MiladsCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/PeggiesCukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/PeggiesCukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AbdullahsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AbdullahsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AradsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AradsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/BeatricesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/BeatricesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CamiransSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CamiransSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MiansSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MiansSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MiladsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MiladsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PeggiesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PeggiesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/demoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCases/demoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +61,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="Peggie" />
-                    <option name="lastUsedInstant" value="1687224875" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1688349453" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1687224874" />
+                    <option name="branchName" value="peggieTest" />
+                    <option name="lastUsedInstant" value="1687532457" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="AbdullahsTestCasesDoneANDModifiedCommonMethodsANDModifiedPageInitializer" />
+                    <option name="lastUsedInstant" value="1687528466" />
                   </RecentBranch>
                 </list>
               </option>
@@ -84,6 +117,119 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Unsuccessful login with invalid or empty credentials">
+    <configuration name="Feature: Mian" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Mian.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CheapAsChipsProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Mian" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Peggie" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CheapAsChipsProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Peggie" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: I register the account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CheapAsChipsProject" />
+      <option name="NAME_FILTER" value="^I register the account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^I register the account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: I register the account" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Navigating to the forgotten password page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CheapAsChipsProject" />
+      <option name="NAME_FILTER" value="^Navigating to the forgotten password page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Navigating to the forgotten password page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Navigating to the forgotten password page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Unsuccessful login with invalid or empty credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Peggie.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CheapAsChipsProject" />
+      <option name="NAME_FILTER" value="^Unsuccessful login with invalid or empty credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Unsuccessful login with invalid or empty credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Unsuccessful login with invalid or empty credentials" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Unsuccessful login with invalid or empty credentials" />
+        <item itemvalue="Cucumber Java.Feature: Peggie" />
+        <item itemvalue="Cucumber Java.Scenario: Navigating to the forgotten password page" />
+        <item itemvalue="Cucumber Java.Feature: Mian" />
+        <item itemvalue="Cucumber Java.Scenario: I register the account" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +244,20 @@
       <workItem from="1687203662861" duration="1206000" />
       <workItem from="1687309626376" duration="3311000" />
       <workItem from="1687312969216" duration="579000" />
+      <workItem from="1687532243652" duration="3521000" />
+      <workItem from="1687744433371" duration="9997000" />
+      <workItem from="1688349160740" duration="1734000" />
+      <workItem from="1688408353669" duration="3000" />
+      <workItem from="1688427842170" duration="384000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1688427969043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688427969043</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,5 +305,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>

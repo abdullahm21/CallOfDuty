@@ -86,16 +86,16 @@ public class PeggiesSteps extends CommonMethods {
 
     @Given("I have entered valid information")
     public void iHaveEnteredValidInformation() {
-        CommonMethods.sendKeys("Teamm", login.First_Name);
-        CommonMethods.sendKeys("Call Of Duty", login.Last_Name);
-        CommonMethods.sendKeys("teamcallofd@gmail.com", login.Email);
-        CommonMethods.sendKeys("22192", login.PostCode);
+        CommonMethods.sendKeys("Peggie", login.First_Name);
+        CommonMethods.sendKeys("Peak", login.Last_Name);
+        CommonMethods.sendKeys("Peggiepeak@gmail.com", login.Email);
+        CommonMethods.sendKeys("22031", login.PostCode);
     }
 
     @And("Check the checkbox in the end and press enter to login")
     public void checkTheCheckboxInTheEndAndPressEnterToLogin() {
         login.Checkbox.click();
-        CommonMethods.sendKeysUsingEnter("OmgRizzu21", login.Password);
+        CommonMethods.sendKeysUsingEnter("Vdvgvega1!", login.Password);
     }
 
     @Then("User should be logged in and redirected to the home page")
