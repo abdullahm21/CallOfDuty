@@ -10,7 +10,7 @@ Background:
       And click on the desired item
       Then the user should be able to see the item
       
-      
+      #
       Scenario: select specific category
       When the user gets the search result
       And mark the desired category
