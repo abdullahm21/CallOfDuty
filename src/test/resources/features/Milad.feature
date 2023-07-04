@@ -1,7 +1,7 @@
 Feature: Search Functionality
 
 Background:
-    Given the user is on the Home page
+    Given the user is on the Home page for Search Functionality
       When the user write the desired item on search box
         
 
