@@ -34,7 +34,10 @@ public class SearchBar {
     @FindBy(xpath="//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[3]/div[2]/div/div/div[2]/div[1]/div[3]/div")
     public WebElement increaseSliderAttribute;
     
+//    @FindBy(xpath="//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[3]/div[2]/div/div/div[2]/div[1]/div[3]/div/div")
+//    public WebElement moveSlider;
     @FindBy(xpath="//*[@id=\"boost-pfs-filter-tree\"]/div/div[3]/div[3]/div[2]/div/div/div[2]/div[1]/div[3]/div/div")
     public WebElement moveSlider;
+    
 
 }

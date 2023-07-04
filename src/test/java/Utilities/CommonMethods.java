@@ -227,9 +227,15 @@ public class CommonMethods extends PageInitializer{
 	}
 
 	public static void sendKeys(String keys,WebElement element) {
-		waitForVisibility(element).sendKeys(keys);
+		waitForVisibility(element).sendKeys(keys, Keys.ENTER);
 
 	}
+	
+	public static void sendKeys1(String keys,WebElement element) {
+		waitForVisibility(element).sendKeys(keys);
+	}
+	
+	
 	//Above is the wait when clicking and when sending keys.
 	
 	//-------------------Hovering Mouse over an element---------------------
